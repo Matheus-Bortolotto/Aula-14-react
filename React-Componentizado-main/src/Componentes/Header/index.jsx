@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
+import styles from './Header.module.css'
+
+const estiloTirulo= {
+    color: "red",
+    background: "blue"
+}
 
 function Header() {
   return (
     <header>
-      <h1>Meu site</h1>
+      <h1 style={estiloTirulo}>Meu site</h1>
+      <h2 className={styles.titulo}>Subtitulo</h2>
       <nav>
             <ul>
             <li><Link to="/">Home</Link></li>
